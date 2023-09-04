@@ -7,6 +7,11 @@ import list from "./images/List.svg";
 import calendar from "./images/calendar.svg";
 import ballSvg from "./images/Bell.svg";
 import combinedsvg from "./images/Combined Shape.svg";
+import audio from "./images/audio.png";
+import databiz from "./images/databiz.png";
+import maker from "./images/maker.png";
+import meet from "./images/meet.png";
+import disaignImg from "./images/mainImg.png";
 import { useState } from "react";
 
 function App() {
@@ -19,8 +24,6 @@ function App() {
     setIsOpen(!isOpen);
   };
   return (
-    // className={`${isOpen ? "bg-current" : "bg-transparent"}`}
-    // className={`w-full h-full  ${isOpen ? "bg-current" : "bg-transparent"}`}>
     <div>
       <header className="flex	mb-12 mt-7">
         <img
@@ -154,6 +157,27 @@ function App() {
           }`}
         ></div>
       </header>
+      <main className="mb-12">
+        <div className="flex items-center justify-around lg:flex-row flex-col-reverse ">
+          <div className="mr-3 max-w-md	">
+            <h1 className="flex lg:text-7xl text-4xl font-bold text-black">Make remote work</h1>
+            <p className="my-12 lg:text-lg text-lg max-w-sm text-textColor">
+              Get your team in sync, no matter your location. Streamline
+              processes, create team rituals, and watch productivity soar.
+            </p>
+            <button className="bg-black rounded-xl text-white px-4 py-2 cursor-pointer">Learn more</button>
+            <div className="flex lg:flex-row row-auto gap-x-6 items-center mt-12 w-80">
+              <img src={databiz} alt="img" className="lg:w-44 w-14"/>
+              <img src={audio} alt="img" className="lg:w-44 w-14"/>
+              <img src={meet} alt="img" className="lg:w-44 w-14"/>
+              <img src={maker} alt="img" className="lg:w-44 w-14"/>
+            </div>
+          </div>
+          <div className="flex lg:h-h-640px h-72 sm:w-w-500px w-96 ">
+            <img src={disaignImg} alt="img" className=" lg:h-h-640px h-72 sm:w-w-500px w-96"/>
+          </div>
+        </div>
+      </main>
     </div>
   );
 }

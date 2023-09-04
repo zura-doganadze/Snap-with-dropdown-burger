@@ -9,6 +9,13 @@ export default {
       backgroundColor: {
         'my-acgkround': "rgba(0, 0, 0, 0.4)",
       },
+      height: {
+        'h-640px': '440px',
+        
+      },
+      width: {
+        'w-500px': '448px'
+      },
     },
   },
   plugins: [],
